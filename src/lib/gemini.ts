@@ -8,7 +8,7 @@ export async function evaluateSubmission(
   fileContent: string,
   rubric: Rubric[]
 ): Promise<EvaluationResult[]> {
-  const model = genAI.getGenerativeModel({ model: 'gemini-2.0-flash' });
+  const model = genAI.getGenerativeModel({ model: 'gemini-2.5-flash' });
 
   // Check if the content is a base64 data URL (for binary images)
   const isBase64Image = fileContent.startsWith('data:image/');
